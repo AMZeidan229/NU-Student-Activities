@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./Bootstrap/CSS/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>GSP-NU (Graduate Starter Pack)</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/GSP.png">
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        header {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #FFFFFF;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #home h1 {
+            color: white;
+        }
+
+        #about, #Mission, #Achievements, #Gallery {
+            background-color: white;
+        }
+
+       
+
+
+
+
+
+        .logo {
+            margin: 0 auto;
+            width: 30%;
+            height: 50%;
+            padding: 7px;
+            border-radius: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .images img {
+            max-width: 100%;
+            margin: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            border-radius: 40px;
+        }
+        .gallery img {
+            max-width: 100%;
+            margin: 10px;
+            border-radius: 40px;
+        }
+        .achievements img {
+            max-width: 30%;
+            float: right;
+            margin-left: 20px;
+        }
+        .achievements p {
+            clear: right;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 1px; 
+        }
+        .video-container iframe {
+            width: 720px;
+            height: 720px;
+        }
+
+        .nav-bar {
+            margin: auto;
+        }
+
+        .nav1 a {
+            color: white;
+            margin-top: 10px;
+        }
+
+        .nav1 a:hover {
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <section id="home">
+        <div class="logo bg-light">
+            <img src="./imgs/GSP.png" alt="...">
+        </div>
+        <h1>GSP (Graduate Starter Pack)</h1>
+    </header>
+    <nav class="bg-danger nav-bar">
+        <ul>
+            <li><li class="nav1 nav-items h5 ps-4 " ><a href="#about">About</a></li> </li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Mission">Mission</a></li></li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Achievements">Achievements</a></li></li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Gallery">Gallery</a></li></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h1>About</h1>
+        <p>GSP was launched to assist undergraduate students in answering the most critical question they will face after graduating; "what now?"..</p>
+        <div class="video-container">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FGSPnu%2Fvideos%2F1192328094746388%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+    </section>
+      
+    <section id="Mission">
+        <h1>Mission</h1>
+        <p>GSP is dedicated to ensuring students are well-informed about the labor market and its specific requirements. It aids in building robust resumes, identifying valuable internships that align with students' goals, and helping them stand out in the competitive landscape. Additionally, it offers support to overcome challenging circumstances, fostering self-confidence and personal development. Its objective is to empower students to address their weaknesses, believe in their abilities, and enhance their overall skill set. .</p> 
+    </section>
+    
+    <section id="Achievements" class="achievements">
+        <h1>Achievements</h1>
+        <p>1. Simulatopedia Event
+            Simulatopidia was an immersive work-life experience tailored for undergraduate students. The mission was to equip them with comprehensive career advising, market awareness, and practical knowledge crucial for their post-graduation journey. The event aimed to bridge the gap between academic content and the labor market through a diverse range of sessions, workshops, and internships.
+            
+            By collaborating with prominent companies such as Ghabbour Auto, Brandify, NilePreneurs, and The Freak, Simulatopidia provided Nile University students with an invaluable insider's perspective on the day-to-day operations of these organizations. This immersive approach allowed students to actively participate in the labor market and gain hands-on experience even before completing their undergraduate studies. As a testament to the event's success, exceptional students were awarded internship opportunities through our esteemed partnerships. Simulatopidia aimed to empower students by offering practical insights, fostering meaningful connections with industry professionals, and nurturing their entrepreneurial spirit. Through this innovative initiative, students were equipped with the necessary skills and knowledge to thrive in their future careers.</p>
+            <p>2. Ask GSP Event
+                "ASK GSP" was a purposeful event designed to provide Nile University students with invaluable insights into the various majors offered by their faculty. Its mission was to assist undergraduate students in selecting a major that aligns with their future aspirations, equipping them with the necessary information to make informed decisions as they enter the professional realm.
+                
+                The event aimed to offer comprehensive career guidance, market knowledge, and mentorship to students’ post-graduation. To accomplish this, ASK GSP featured distinguished experts who delivered enlightening speeches on students' academic majors.
+                
+                Notable speakers included Akram Marwan, who shared insights on career coaching, Mohamed Charata, who discussed the future of supply chain and logistics, Shady al Jacky, who presented the fundamentals of data analysis, and Noha Masry, who provided valuable tips on CV writing and interview techniques.</p>
+                <p>The primary objective of this event was to empower Nile University students to make well-informed choices regarding their majors while ensuring they possess a thorough understanding of the labor market's demands and expectations.</p>
+            </section>
+    
+            <section id="Gallery">
+                <h1>Gallery</h1>
+                <div class="gallery"></div>
+                <img src="https://www.nu.edu.eg/sites/default/files/2023-07/screenshot_2023-07-19_104021.png" alt="...">
+                <img src="https://www.nu.edu.eg/sites/default/files/2023-07/screenshot_2023-07-19_104123.png" alt="...">
+                    <img src="https://www.nu.edu.eg/sites/default/files/2023-07/screenshot_2023-07-19_104051.png" alt="...">
+                </div>
+            </section>
+            
+            <section class="footer py-3 bg-danger text-light text-center position-relative">
+                <div class="container">
+                  <div class="h2">
+        <a href="https://www.facebook.com/NileUniversity" ><i class="bi bi-facebook text-white px-2"></i></a>
+        <a href="https://www.instagram.com/nileuniversity.eg/"><i class="bi bi-instagram text-white px-2"></i></a>
+        <a href="https://www.linkedin.com/school/nile-university/"><i class="bi bi-linkedin text-white px-2"></i></a>
+
+            
+                  </div>
+                  <h5>made by 3AZ</span> | &copy; 2023 All rights reserved.</h5>
+                  <a href="#home" class="bi bi-arrow-up-circle text-white h2 position-absolute top-0 end-0 p-4"></a>
+                  <a href="index.html" class="bi bi-house text-white h2 position-absolute top-0 start-0 p-4"></a>
+                  
+                </div>
+              </section>
+        </body>
+        </html>
+        
+                 

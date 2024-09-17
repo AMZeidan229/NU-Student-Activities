@@ -1,0 +1,187 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="./Bootstrap/CSS/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>E-Club (Entrepreneurship Club)</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/Eclub.png">
+
+    <style>
+          body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        header {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #FFFFFF;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #home h1 {
+            color: white;
+        }
+        #about, #Mission, #Achievements, #Gallery {
+            background-color: white;
+        }
+        
+        .logo {
+            margin: 0 auto;
+            width: 30%;
+            height: 50%;
+            padding: 7px;
+            border-radius: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .images img {
+            max-width: 100%;
+            margin: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .achievements img {
+            max-width: 30%;
+            float: right;
+            margin-left: 20px;
+        }
+        .achievements p {
+            clear: right;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 1px; 
+        }
+        .video-container iframe {
+            width: 720px;
+            height: 720px;
+        }
+        .nav-bar {
+            margin: auto;
+        }
+
+        .nav1 a {
+            color: white;
+            margin-top: 10px;
+        }
+
+        .nav1 a:hover {
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section id="home">
+        <div class="logo bg-light">
+            <img src="data:image/png;base64,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" alt="" width="100%" height="70%">
+        </div>
+        <h1>E-NU (Entrepreneurship Club)</h1>
+    </header>
+    <nav class="bg-danger nav-bar">
+        <ul>
+            <li><li class="nav1 nav-items h5 ps-4 " ><a href="#about">About</a></li> </li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Mission">Mission</a></li></li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Achievements">Achievements</a></li></li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Gallery">Gallery</a></li></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h1>About</h1>
+        <p>The Entrepreneurship Club aims to spread the spirit of entrepreneurial thoughts and how it affects self-development. It also spreads awareness about the importance of innovation skills and the importance of the entrepreneurship field in the new era.</p>
+        <div class="video-container">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FNileUniversity%2Fvideos%2F807946851345164%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    </section>
+    <section id="Mission">
+        <h1>Mission</h1>
+        <p>The Entrepreneurship Club empowers young individuals through access to resources, connections with entrepreneurs, and fostering innovative ideas. It enhances understanding of new businesses and encourages entrepreneurial momentum among students and researchers.
+
+            By stimulating participation and interaction with various stakeholders, the club creates a dynamic platform for fostering entrepreneurship and driving positive change.</p>
+    </section>
+    <section id="Achievements" class="achievements">
+        <h1>Achievements</h1>
+        <p>The Entrepreneurship Club initiated a series of impactful events, starting with the Academy, which marked the launch of the Egyptian Space Summit. This exploration continued with a mega event featuring renowned novelist Essam Yousif, focused on raising awareness of the 17 United Nations Goals to be achieved by 2030. 
+            Aptly named "17 Goals," the event provided a platform for discussions and education surrounding this significant global issue.
+
+ 
+
+ 
+
+Additionally, the club embarked on a new journey, engaging with students to educate them on the process of validating ideas for their potential. Encouraging undergraduate students to create projects that benefit their organizations, fostering growth and development. Through collaborations with the Youth Leaders Foundation (YLF), students gained opportunities to participate in competitions and connect with like-minded individuals. Their accomplishments include qualifying for the final stage of the YLF 2022 competition and active participation in Change Makers 2022.
+        </p>        
+    </section>
+    <section id="Gallery">
+        <h1>Gallery</h1>
+        <div class="gallery">
+<img src="https://www.nu.edu.eg/sites/default/files/2023-07/whatsapp_image_2023-07-19_at_9.29.25_am_2.jpeg" alt="...">
+<img src="https://www.nu.edu.eg/sites/default/files/2023-07/whatsapp_image_2023-07-19_at_9.29.25_am_3.jpeg" alt="....">
+<img src="https://www.nu.edu.eg/sites/default/files/2023-07/whatsapp_image_2023-07-19_at_9.29.25_am_4.jpeg" alt="....">
+</div>
+</section>
+
+<section class="footer py-3 bg-danger text-light text-center position-relative">
+    <div class="container">
+      <div class="h2">
+          <a href="https://www.facebook.com/NileUniversity" ><i class="bi bi-facebook text-white px-2"></i></a>
+        <a href="https://www.instagram.com/nileuniversity.eg/"><i class="bi bi-instagram text-white px-2"></i></a>
+        <a href="https://www.linkedin.com/school/nile-university/"><i class="bi bi-linkedin text-white px-2"></i></a>
+
+      </div>
+      <h5>made by 3AZ</span> | &copy; 2023 All rights reserved.</h5>
+      <a href="#home" class="bi bi-arrow-up-circle text-white h2 position-absolute top-0 end-0 p-4"></a>
+      <a href="index.html" class="bi bi-house text-white h2 position-absolute top-0 start-0 p-4"></a>
+      
+    </div>
+  </section>
+</body>
+</html>

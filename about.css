@@ -1,0 +1,84 @@
+.me {
+    justify-content: space-evenly;
+    
+}
+
+.me img {
+    padding: 30px;
+    width: fit-content;
+    height: 500px;
+    width: 380px;
+    border-radius: 50px;
+}
+
+.me p {
+    text-align: center;
+
+}
+.me .row{
+    justify-content: space-between;
+    text-align: center;
+}
+.me .line{
+    height: 4px;
+    background-color: black;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+.me .line::before{
+    content: "";
+    width: 15px;
+    background-color: red;
+    height: 15px;
+    left: -2px;
+    bottom: -5.3px;
+    position: absolute;
+    border-radius: 50%;
+}
+.me .line::after{
+content: "";
+    width: 15px;
+    background-color: red;
+    height: 15px;
+    right: -2px;
+    bottom: -5.3px;
+    position: absolute;
+    border-radius: 50%;
+}
+    .card-body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+}
+
+.button-test{
+    width: 210px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.lead1 {
+    text-align: justify;
+}
+
+.imfun {
+    border-radius: 4rem;
+    width: 270px;
+    height: 270px;
+}
+
+.cardtitle1
+{
+    text-align: center;
+}
+.ab {
+    margin-top: 0.8rem;
+}
+.name {
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+}

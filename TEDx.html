@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./Bootstrap/CSS/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>(TEDxNileUniversity)</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/TEDx.jpeg">
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        header {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #FFFFFF;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #home h1 {
+            color: white;
+        }
+
+        #about, #Mission, #Achievements, #Gallery {
+            background-color: white;
+        }
+
+       
+
+
+
+
+
+        .logo {
+            margin: 0 auto;
+            width: 30%;
+            height: 50%;
+            padding: 7px;
+            border-radius: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .images img {
+            max-width: 100%;
+            margin: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .achievements img {
+            max-width: 30%;
+            float: right;
+            margin-left: 20px;
+        }
+        .achievements p {
+            clear: right;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 1px; 
+        }
+        .video-container iframe {
+            width: 720px;
+            height: 720px;
+        }
+
+        .nav-bar {
+            margin: auto;
+        }
+
+        .nav1 a {
+            color: white;
+            margin-top: 10px;
+        }
+
+        .nav1 a:hover {
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <section id="home">
+        <div class="logo bg-light">
+            <img src="data:image/jpeg;base64,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" alt="...">
+        </div>
+        <h1>TEDxNU</h1>
+    </header>
+    <nav class="bg-danger nav-bar">
+        <ul>
+            <li><li class="nav1 nav-items h5 ps-4 " ><a href="#about">About</a></li> </li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Mission">Mission</a></li></li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Achievements">Achievements</a></li></li>
+            <li><li class="nav1 nav-items h5 ps-4"><a href="#Gallery">Gallery</a></li></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h1>About</h1>
+        <p>TEDxNileUniversity believes passionately in the power of ideas to change attitudes, lives, and, ultimately, the world. Hence why, TEDxNU, is always enthusiastic about sharing worthy ideas through TED Talka where its goal is to inform and educate the global audience in an accessible way. Scientists, researchers, technologists, business leaders, artists, designers and other world experts take the TED stage to present “Ideas Worth Spreading” (TED slogan)..</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_yze7E1FQpg?si=Lq5wrQPWhsrsR37q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section id="Mission">
+        <h1>Mission</h1>
+        <p>TedxNU sparks imagination, embraces possibility, and catalyzes impact. It is a club devoted to curiosity, reason, wonder, and the pursuit of knowledge without an agenda. With a clearinghouse of free knowledge from inspired thinkers and a global community, TedxNU engages individuals with ideas that drive positive change and shape a limitless world. .</p> 
+    </section>
+    <section id="Achievements" class="achievements">
+        <h1>Achievements</h1>
+        <p>TED events offer a wide range of content spanning science, business, arts, technology, and global issues. Main stage sessions are thematically curated and feature TED Talks, music, performances, and comedy. Attendees also engage with TED Fellows, participate in workshops and activities called Discovery Sessions, explore exhibits and activations, and enjoy curated dinners.</p>
+        <p>TEDWomen specifically highlights women's voices and contributions. These events inspire groundbreaking ideas, multidisciplinary collaboration, and positive global impact. It’s a three-day conference about the power of women and girls to be creators and change-makers. The program of speakers, workshops, afternoon and evening events — and daring discussions — has sparked some of TED's most iconic moments yet.</p>
+        <p>The TED Talk event, themed "Fearless: To the Next Level," proved to be a resounding success. After an extensive search, nearly 50 speakers were carefully selected based on their alignment with the event's theme. The distinguished lineup included Abeer El-Leithy, Karim Amr, Mireille Barsoum, Mohamed Abdelfattah, Nada Chatila, and Shrouk Ghallab. While primarily targeting Nile University students, the event also welcomed attendees from other universities.
+
+            The success of the event was further bolstered by the support of various sponsors, including NilePreneurs, STREAM, Stickerology, 180 degrees, Bookworm, Glamorize Glitter, Clue Digital, SYE, Smash Fit, By Hand, Red Bull, and She Clay. The talks delivered during the event are now available for streaming on ted.com and the official TEDx Talks YouTube channel.</p>
+        </section>
+    
+        <section id="Gallery">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <img src="https://nu.edu.eg/sites/default/files/2023-05/343502271_1242921082999649_4695606871123596411_n.jpg" alt="...">
+                <img src="https://nu.edu.eg/sites/default/files/2023-05/342519042_178387024729150_314969925807051328_n.jpg" alt="...">
+                <img src="https://nu.edu.eg/sites/default/files/2023-05/342588824_796579398190199_1111292029397295597_n.jpg" alt="...">
+                <img src="https://nu.edu.eg/sites/default/files/2023-05/342517071_1047195826256895_5176419621922768532_n.jpg" alt="...">
+                <img src="https://nu.edu.eg/sites/default/files/2023-05/342197730_1317871605486462_4146098724858438877_n.jpg" alt="...">
+            </div>
+        </section>
+        
+        <section class="footer py-3 bg-danger text-light text-center position-relative">
+            <div class="container">
+              <div class="h2">
+                <a href="https://www.facebook.com/NileUniversity" ><i class="bi bi-facebook text-white px-2"></i></a>
+                <a href="https://www.instagram.com/nileuniversity.eg/"><i class="bi bi-instagram text-white px-2"></i></a>
+                <a href="https://www.linkedin.com/school/nile-university/"><i class="bi bi-linkedin text-white px-2"></i></a>
+        
+        
+              </div>
+              <h5>made by 3AZ</span> | &copy; 2023 All rights reserved.</h5>
+              <a href="#home" class="bi bi-arrow-up-circle text-white h2 position-absolute top-0 end-0 p-4"></a>
+              <a href="index.html" class="bi bi-house text-white h2 position-absolute top-0 start-0 p-4"></a>
+              
+            </div>
+          </section>
+    </body>
+    </html>

@@ -6,7 +6,6 @@ This repository contains the **front-end** implementation of the **NU Student Ac
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 
 ## Features
@@ -28,18 +27,6 @@ Once the project is running locally, you can interact with the various sections 
 Home Page: View a list of all student activities, clubs, and events.
 Event Details: Click on an event to view more detailed information.
 Responsive Navigation: The website adapts to different screen sizes, making it easy to use on both desktop and mobile devices.
-
-## Project Structure
-NU-Student-Activities/
-│
-├── assets/                # Images, icons, and other static assets
-│   └── img/               # Images for activities and events
-├── css/                   # CSS files for styling
-│   └── main.css           # Main CSS file
-├── js/                    # JavaScript files for interactivity
-│   └── app.js             # Main JavaScript file
-├── index.html             # Main HTML file
-└── README.md              # This README file
 
 ## Contributing
 Contributions are welcome! If you'd like to improve the project or add new features, do not hesitate to contact me at a.mohamed2397@nu.edu.eg

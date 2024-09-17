@@ -20,7 +20,6 @@ The NU Student Activities Portal provides the following functionalities:
 This project uses the following technologies:
 - **HTML**: Structure of the web pages.
 - **CSS**: Styling of the UI, with some usage of **Sass** for better management of styles.
-- **JavaScript**: For adding interactivity to the web pages.
 - **Bootstrap**: Used for responsive design and layout.
 - **FontAwesome**: Icons used throughout the platform for visual enhancement.
 
